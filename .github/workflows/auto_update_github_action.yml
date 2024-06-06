@@ -22,7 +22,7 @@ jobs:
       actions: write
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: await new Promise(resolve => setTimeout(resolve, 2000))
         uses: actions/checkout@v4
         with:
           repository: "mrrfv/cloudflare-gateway-pihole-scripts"
